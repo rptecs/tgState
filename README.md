@@ -1,5 +1,5 @@
 tgState
-==
+=
 
 [English](https://github.com/csznet/tgState/blob/main/README_en.md)
 
