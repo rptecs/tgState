@@ -1,8 +1,7 @@
 tgState
 =
 
-[English](https://github.com/csznet/tgState/blob/main/README_en.md)
-
+[English](https://github.com/csznet/tgState/blob/main/README_en.md) 
 
 一款以Telegram作为储存的文件外链系统
 
@@ -12,6 +11,10 @@ tgState
 
 如有疑惑，可以咨询TG @tgstate123  
 
+**版本说明**  
+ - 1.2版本开始采用file_id形式留存外链，对以往版本外链不兼容，需要保留外链的谨慎更新  
+ - 1.1版本开始只保留/d外链，对以往版本外链不兼容，需要保留外链的谨慎更新  
+
 **特性**
  - 不限制上传文件大小（可选
  - 支持访问密码限制
@@ -20,7 +23,10 @@ tgState
 
 **Demo**
 
-https://tgtu.ikun123.com/  
+实时预览：https://tgstate.vercel.app
+
+
+旧版本：https://tgtu.ikun123.com/  
 搭建在Vercel，大文件可能会上传失败  
 
 测试图片：
@@ -66,13 +72,11 @@ docker run -d -p 8088:8088 --name tgstate -e TOKEN=aaa -e CHANNEL=@bbb -e MODE=p
  二进制部署
 ====
  下载Linux amd64环境的二进制文件
+ 
  ```
- wget https://github.com/csznet/tgState/releases/latest/download/tgState.zip
+ wget https://github.com/csznet/tgState/releases/latest/download/tgState.zip && unzip tgState.zip && rm tgState.zip
  ```
- 解压
- ```
- unzip tgState.zip && rm tgState.zip
- ```
+
  使用方法
 ----
 
